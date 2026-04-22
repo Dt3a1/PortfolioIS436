@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio – Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    .bg-dark { background-color: #000000 !important; }
+
+    :root {
+      --umbc-black: #000000;
+      --umbc-gold: #fdb515;
+      --umbc-dark-gray: #111111;
+      --umbc-border: #2a2a2a;
+    }
+
+    body {
+      background-color: var(--umbc-black);
+      color: white;
+    }
+
+    .navbar, footer {
+      background-color: var(--umbc-black) !important;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    footer {
+      color: white !important;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: var(--umbc-gold) !important;
+    }
+
+    .text-secondary,
+    .text-muted {
+      color: #b8b8b8 !important;
+    }
+
+    .card {
+      background-color: var(--umbc-dark-gray);
+      border: 1px solid var(--umbc-border) !important;
+      color: white;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background-color: var(--umbc-gold) !important;
+      color: black !important;
+      font-weight: 600;
+      border-bottom: none;
+    }
+
+    .card-img-top {
+      height: 230px;
+      object-fit: cover;
+      background-color: #1a1a1a;
+    }
+
+    .badge.bg-secondary {
+      background-color: #2a2a2a !important;
+      color: white !important;
+    }
+
+    .badge.bg-primary,
+    .badge.bg-success,
+    .badge.bg-warning,
+    .badge.bg-danger {
+      background-color: var(--umbc-gold) !important;
+      color: black !important;
+    }
+
+    .btn-outline-primary {
+      border-color: var(--umbc-gold);
+      color: var(--umbc-gold);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--umbc-gold);
+      color: black;
+      border-color: var(--umbc-gold);
+    }
+
+    .github-btn {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      border: 1px solid var(--umbc-gold);
+      color: var(--umbc-gold);
+    }
+
+    .github-btn:hover {
+      background-color: var(--umbc-gold);
+      color: black;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-dark text-white py-4">
+    <div class="container">
+      <h1 class="fw-bold">My Projects</h1>
+      <p class="text-secondary mb-0">A few projects that highlight my coursework, technical skills, and creativity.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="use case diagrams.png" class="card-img-top" alt="Use Case Diagram project">
+            <div class="card-header">
+              <i class="bi bi-diagram-3 me-2"></i>Waitlist System Use Case Diagram
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">System Analysis Modeling</h5>
+              <p class="card-text text-muted">
+                Created a use case diagram for a restaurant waitlist system to show how staff and customers interact with the system. This project demonstrates my understanding of system requirements, actors, use cases, and process modeling in system analysis.
+              </p>
+              <div class="mt-2">
+                <span class="badge bg-primary me-1">System Analysis</span>
+                <span class="badge bg-secondary me-1">UML</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                <a href="#" class="github-btn">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="Tables.png" class="card-img-top" alt="Database tables project">
+            <div class="card-header">
+              <i class="bi bi-database me-2"></i>Database Table Design
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Database Structure Project</h5>
+              <p class="card-text text-muted">
+                Designed relational database tables for a waitlist system, including customer, staff, and status data. This project strengthened my skills in organizing structured data, building table relationships, and designing databases that support real-world business processes.
+              </p>
+              <div class="mt-2">
+                <span class="badge bg-primary me-1">Database</span>
+                <span class="badge bg-secondary me-1">SQL Design</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                <a href="#" class="github-btn">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="Posture Guardian Image.png" class="card-img-top" alt="Posture Guardian project">
+            <div class="card-header">
+              <i class="bi bi-person-workspace me-2"></i>Posture Guardian
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">AI-Powered Posture Monitoring Tool</h5>
+              <p class="card-text text-muted">
+                Built a posture detection web app and Chrome extension that gives users real-time feedback when they slouch. This project reflects my experience with JavaScript, HTML/CSS, browser extensions, and building practical tools that improve everyday user habits.
+              </p>
+              <div class="mt-2">
+                <span class="badge bg-primary me-1">JavaScript</span>
+                <span class="badge bg-secondary me-1">Web App</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                <a href="#" class="github-btn">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="valentines day interactive project.png" class="card-img-top" alt="Valentine interactive project">
+            <div class="card-header">
+              <i class="bi bi-heart-fill me-2"></i>Valentine Interactive Page
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Interactive Front-End Project</h5>
+              <p class="card-text text-muted">
+                Designed a playful interactive webpage with custom visuals and user interaction elements. This project highlights my front-end creativity and ability to build engaging interfaces using HTML, CSS, and JavaScript.
+              </p>
+              <div class="mt-2">
+                <span class="badge bg-primary me-1">Front-End</span>
+                <span class="badge bg-secondary me-1">Interactive Design</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                <a href="#" class="github-btn">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 MyPortfolio. Built with Bootstrap 5.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <iframe src="chat.html"
+          style="position:fixed;bottom:0;right:0;width:420px;height:620px;border:none;z-index:9999;"
+          title="Portfolio AI Assistant">
+  </iframe>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio – About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --umbc-black: #000000;
+      --umbc-gold: #fdb515;
+      --umbc-gold-light: #fff4d6;
+      --umbc-dark-gray: #111111;
+      --umbc-border: #2a2a2a;
+    }
+
+    body {
+      background-color: var(--umbc-black);
+      color: white;
+    }
+
+    .navbar, footer, .bg-dark, .bg-primary {
+      background-color: var(--umbc-black) !important;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    footer {
+      color: white !important;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: var(--umbc-gold) !important;
+    }
+
+    .text-primary,
+    .text-warning {
+      color: var(--umbc-gold) !important;
+    }
+
+    .text-muted,
+    .text-secondary {
+      color: #b8b8b8 !important;
+    }
+
+    .btn-primary {
+      background-color: var(--umbc-gold);
+      border-color: var(--umbc-gold);
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background-color: #e0a800;
+      border-color: #e0a800;
+      color: black;
+    }
+
+    .btn-outline-primary {
+      border-color: var(--umbc-gold);
+      color: var(--umbc-gold);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--umbc-gold);
+      color: black;
+      border-color: var(--umbc-gold);
+    }
+
+    .bg-light {
+      background-color: #0a0a0a !important;
+    }
+
+    .list-group-item {
+      background-color: transparent;
+      color: white;
+      border-color: var(--umbc-border);
+    }
+
+    .progress {
+      background-color: #222;
+    }
+
+    .progress-bar {
+      background-color: var(--umbc-gold) !important;
+      color: black;
+      font-weight: 600;
+    }
+
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid var(--umbc-gold);
+      box-shadow: 0 0 20px rgba(253, 181, 21, 0.2);
+    }
+
+    .section-title-line {
+      width: 70px;
+      height: 4px;
+      background-color: var(--umbc-gold);
+      border-radius: 999px;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-card,
+    .info-card,
+    .skill-card {
+      background-color: var(--umbc-dark-gray);
+      border: 1px solid var(--umbc-border);
+      border-radius: 16px;
+    }
+
+    .timeline-icon {
+      width: 48px;
+      height: 48px;
+      background-color: var(--umbc-gold);
+      color: black;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .badge.bg-secondary {
+      background-color: #262626 !important;
+      color: white;
+      font-size: 0.95rem;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      border: 1px solid #3a3a3a;
+    }
+
+    .about-header {
+      border-bottom: 1px solid #1b1b1b;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-header text-white py-4">
+    <div class="container">
+      <h1 class="fw-bold">About Me</h1>
+      <p class="text-secondary mb-0">Get to know who I am and what I’ve learned.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-4 text-center">
+          <img src="1753806617916.jpg" alt="Dongthi Nguyen" class="rounded-circle img-fluid profile-photo">
+          <h3 class="mt-4 fw-bold">Dongthi Nguyen</h3>
+          <p class="fs-5 text-warning mb-3">Information Systems Student</p>
+<a href="Dongthi Nguyen Resume.pdf" class="btn btn-outline-primary px-4 py-2" download>
+  
+  <i class="bi bi-download me-2"></i>Download Resume
+          </a>
+        </div>
+
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-0">Hello!</h2>
+          <div class="section-title-line"></div>
+
+          <p class="text-muted fs-5">
+            I am an Information Systems student at the University of Maryland, Baltimore County with a strong interest in technology, problem-solving, and system design. Through my coursework and hands-on projects, I have developed skills in system analysis, web development, and data management.
+          </p>
+
+          <p class="text-muted fs-5 mb-4">
+            I enjoy breaking down complex problems and translating them into practical, user-focused solutions. I am currently building experience through academic projects and technical work, and I am eager to continue growing as a technology professional.
+          </p>
+
+          <div class="info-card p-0 overflow-hidden">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between flex-wrap gap-2 px-4 py-3">
+                <span class="fw-semibold text-warning">University:</span>
+                <span>University of Maryland, Baltimore County</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between flex-wrap gap-2 px-4 py-3">
+                <span class="fw-semibold text-warning">Major:</span>
+                <span>Information Systems</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between flex-wrap gap-2 px-4 py-3">
+                <span class="fw-semibold text-warning">Course:</span>
+                <span>IS436 – System Analysis</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between flex-wrap gap-2 px-4 py-3">
+                <span class="fw-semibold text-warning">Expected Graduation:</span>
+                <span>2026</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-0">Education Timeline</h2>
+      <div class="section-title-line mx-auto"></div>
+
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="timeline-card p-4 d-flex gap-3 align-items-start">
+            <div class="timeline-icon">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div>
+              <h4 class="fw-bold mb-1">University of Maryland, Baltimore County</h4>
+              <p class="text-warning mb-1">B.S. in Information Systems</p>
+              <p class="text-muted mb-0">Expected Graduation: 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="timeline-card p-4 d-flex gap-3 align-items-start">
+            <div class="timeline-icon">
+              <i class="bi bi-book-fill"></i>
+            </div>
+            <div>
+              <h4 class="fw-bold mb-1">Business & Technology Coursework</h4>
+              <p class="text-muted mb-1">System Analysis, databases, web development, and related technical coursework</p>
+              <p class="text-warning mb-0">Ongoing academic development</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="timeline-card p-4 d-flex gap-3 align-items-start">
+            <div class="timeline-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div>
+              <h4 class="fw-bold mb-1">Technical Experience Growth</h4>
+              <p class="text-muted mb-1">Building hands-on skills through projects, portfolio work, and applied learning</p>
+              <p class="text-warning mb-0">Current focus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-0">My Skills</h2>
+      <div class="section-title-line mx-auto"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <p class="mb-2 fw-semibold">HTML & CSS</p>
+          <div class="progress" style="height: 22px;">
+            <div class="progress-bar" style="width: 85%">85%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="mb-2 fw-semibold">Bootstrap</p>
+          <div class="progress" style="height: 22px;">
+            <div class="progress-bar" style="width: 80%">80%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="mb-2 fw-semibold">System Analysis</p>
+          <div class="progress" style="height: 22px;">
+            <div class="progress-bar" style="width: 85%">85%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="mb-2 fw-semibold">Problem Solving</p>
+          <div class="progress" style="height: 22px;">
+            <div class="progress-bar" style="width: 82%">82%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-0">Hobbies & Interests</h2>
+      <div class="section-title-line mx-auto"></div>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <span class="badge bg-secondary">Web Design</span>
+        <span class="badge bg-secondary">Technology</span>
+        <span class="badge bg-secondary">Problem Solving</span>
+        <span class="badge bg-secondary">Data Analysis</span>
+        <span class="badge bg-secondary">Learning New Tools</span>
+        <span class="badge bg-secondary">Team Collaboration</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 MyPortfolio. Built with Bootstrap 5.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
